@@ -1,10 +1,6 @@
 pipeline {
     agent any
-    tools {
-        maven 'Local Maven'
-        jdk 'JDK'
-    }
-    stages {
+   stages {
         stage ('Initialize') {
             steps {
                 bat '''
